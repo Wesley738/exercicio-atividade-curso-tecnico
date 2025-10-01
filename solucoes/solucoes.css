@@ -1,0 +1,271 @@
+body {
+    /* width: 80%;
+    margin: auto; */
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.cabecalho {
+    display: flex;
+    background-color: white;
+    width: 85%;
+    margin: 18px auto;
+    border-radius: 15px;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 8;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0; right: 20px; left: 20px;
+    z-index: 3;
+}
+
+.cabecalho img {
+    width: 15rem;
+    height: 5rem;
+    margin-left: 8px;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+.menu a {
+    font-weight: 600;
+    /* color: #0a2188; */
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid #0a2188;
+}
+
+.hero {
+    background-image: url(../imgs/solucoes_bg.jpg);
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    margin: 16rem auto 10px;
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200
+}
+
+.hero * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero::before {
+    content: " ";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; min-height: 630px;
+    background-color: rgba(10, 70, 182, 0.7);
+    z-index: 0;
+}
+
+.slogan {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin: 0;
+    color: white;
+}
+
+.titulo_secao {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 3rem auto 0 auto;
+    width: 70%;
+}
+
+.titulo_secao span {
+    color: #3167b8;
+    font-size: 2.7rem;
+}
+
+.list-solucao {
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+    justify-content: space-evenly;
+}
+
+.list-solucao_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 200px;
+}
+
+.list-solucao_item img {
+    width: 160px;
+    height: 160px;
+    border: 1.2rem solid #3167b8;
+    border-radius: 50%;
+}
+
+.list-solucao_item h2 {
+    font-size: 1.6rem;
+}
+
+.list-solucao_item p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.list-solucao_item a {
+    color: #3167b8;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.list-solucao_item a:hover {
+    box-shadow: 1px 1px 13px rgba(10, 70, 182, 0.7);
+}
+
+
+#gestao {
+    border: 1.2rem solid #31b831;
+}
+
+#imobiliario {
+    border: 1.2rem solid #e9803b;
+}
+
+#educacao {
+    border: 1.2rem solid #e93b3b;
+}
+
+.chamamento-duvida {
+    display: flex;
+    align-items: center;
+    margin: 4rem auto 5rem;
+}
+
+.chamamento-duvida__auxiliar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.chamamento-duvida img {
+    width: 800px;
+    height: 500px;
+}
+
+.chamamento-duvida_pergunta {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: black;
+    line-height: 1;
+    margin-bottom: 0.6rem;
+}
+
+.chamamento-duvida_motiva {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 100;
+    color: black;
+    line-height: 1;
+    padding: 1px;
+}
+
+.chamamento-duvida a {
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+    background-color: #3167b8;
+    margin-top: 3rem;
+    width: 30%;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.chamamento-duvida a:hover {
+    background-color: white;
+    color: #3167b8;
+    outline: 1px solid #3167b8;
+}
+
+.contatos-mais_informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../imgs/footer.jpg);
+    background-size: cover;
+    height: 150px;
+    position: relative;
+}
+
+.contatos-mais_informacoes::before {
+    content: " ";
+    position: absolute;
+    inset: 0; /* cobre todo o elemento */
+    background: rgba(6, 65, 153, 0.9); 
+    z-index: 1;
+}
+
+.redes_sociais {
+    display: flex;
+    gap: 0.9rem;
+}
+
+.redes_sociais img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.mais_informacoes {
+    position: relative;
+    z-index: 2;
+    font-size: 0.9rem;
+    color: white;
+    margin: 0.8rem 0 0.4rem;
+}
+
+.dedicatoria {
+    z-index: 2;
+    font-size: 0.7rem;
+    color: white;
+}
+
+.dedicatoria a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dedicatoria a:hover  {
+    text-decoration: underline;
+}

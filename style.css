@@ -1,0 +1,357 @@
+body {
+    /* width: 80%;
+    margin: auto; */
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.cabecalho {
+    display: flex;
+    background-color: white;
+    width: 85%;
+    margin: 18px auto;
+    border-radius: 15px;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 8;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0; right: 20px; left: 20px;
+    z-index: 3;
+}
+
+.cabecalho img {
+    width: 15rem;
+    height: 5rem;
+    margin-left: 8px;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+.menu a {
+    font-weight: 600;
+    /* color: #0a2188; */
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid #0a2188;
+}
+
+.hero {
+    background-image: url(/imgs/pexels-googledeepmind-17485706.jpg);
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    margin: 14rem auto 10px;
+    font-size: 4rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 200
+}
+
+.hero * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero::before {
+    content: " ";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; min-height: 630px;
+    background-color: rgb(255, 255, 255, 0.7);
+    z-index: 0;
+}
+
+.slogan {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.credibilidade {
+    display: flex;
+    list-style: none;
+    margin-top: 5rem;
+    gap: 5.6rem;
+    padding: 0;
+    font-size: 1rem;
+    color: white;
+}
+
+.credibilidade li {
+    background-color: rgb(49, 103, 184);
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.8rem;
+}
+
+.titulo_secao {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 3rem auto 0 auto;
+}
+
+.titulo_secao span {
+    color: #3167b8;
+}
+
+.clientes_list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+.clientes_list img {
+    width: 180px;
+}
+
+.list-caract {
+    padding: 20px;
+    background-color: #3167b8;
+    display: flex;
+    height: 200px;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list-caract_item {
+    flex-basis: 250px;
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 0.8rem;
+}
+
+.list-caract_item__titulo {
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #0a2188;
+    padding: 1rem;
+}
+
+.list-caract_item__info {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0 0 0.9rem 0;
+}
+
+.servicos .titulo_secao {
+    font-size: 2.4rem;
+    width: 30%;
+    margin: 2rem auto 0 auto;
+    padding-bottom: 1rem;
+}
+
+.servicos_intro {
+    text-align: center;
+    margin: 0 0 4rem 0;
+    font-size: 1.4rem;
+}
+
+.servicos_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    justify-content: center;
+}
+
+
+.servicos_list__item {
+    flex-basis: 380px;
+    height: 230px;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.servicos_list__item-titulo {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.servicos_list__item::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* cobre todo o elemento */
+    background: rgba(27, 74, 145, 0.7); 
+    z-index: 1;
+    border-radius: 0.8rem;
+}
+
+.servicos_list__item:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
+}
+
+.servicos_list__item h3 {
+    position: relative;
+    z-index: 2; 
+}
+
+#contabil {
+    background-image: url(/imgs/contabil.jpg);
+    background-size: cover;
+}
+
+#gestao {
+    background-image: url(/imgs/gestao.jpg);
+    background-size: cover;
+}
+
+#moda {
+    background-image: url(/imgs/moda.jpg);
+    background-size: cover;
+}
+
+#educacional {
+    background-image: url(/imgs/educacao.jpg);
+    background-size: cover;
+}
+
+#imobiliario {
+    background-image: url(/imgs/imobiliario.jpg);
+    background-size: cover;
+}
+
+#empresarial {
+    background-image: url(/imgs/empresario.jpg);
+    background-size: cover;
+}
+
+.titulo_secao-depoimentos {
+    text-align: center;
+    font-size: 2.4rem;
+    width: 50%;
+    margin: 4rem auto 3rem auto;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #3167b8;
+}
+
+.depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 94%;
+    margin: auto auto 6rem;
+}
+
+.feedback {
+    display: flex;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.feedback img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    border: 4px solid white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.feedback-nome {
+    font-size: 1rem;
+    margin: 0;
+    color: #0a2188;
+}
+
+.feedback-cargo {
+    margin: 0 0 0.3rem 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: rgb(85, 85, 85);
+}
+
+.feedback-texto {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.contatos-mais_informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(imgs/footer.jpg);
+    background-size: cover;
+    height: 150px;
+    position: relative;
+}
+
+.contatos-mais_informacoes::before {
+    content: " ";
+    position: absolute;
+    inset: 0; /* cobre todo o elemento */
+    background: rgba(6, 65, 153, 0.9); 
+    z-index: 1;
+}
+
+.redes_sociais {
+    display: flex;
+    gap: 0.9rem;
+}
+
+.redes_sociais img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.mais_informacoes {
+    position: relative;
+    z-index: 2;
+    font-size: 0.9rem;
+    color: white;
+    margin: 0.8rem 0 0.4rem;
+}
+
+.dedicatoria {
+    z-index: 2;
+    font-size: 0.7rem;
+    color: white;
+}
+
+.dedicatoria a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dedicatoria a:hover  {
+    text-decoration: underline;
+}
