@@ -20,10 +20,25 @@ body {
     z-index: 3;
 }
 
+@media (max-width: 600px) {
+    .cabecalho {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .cabecalho img {
     width: 15rem;
     height: 5rem;
     margin-left: 8px;
+}
+
+@media (max-width: 600px) {
+    .cabecalho img {
+        width: 10rem;
+        height: 3rem;
+    }
 }
 
 nav {
@@ -37,12 +52,25 @@ nav {
     font-size: 1.1rem;
 }
 
+@media (max-width: 600px) {
+    .menu {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
 .menu a {
     font-weight: 600;
-    /* color: #0a2188; */
     color: black;
     text-decoration: none;
     padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .menu a {
+        padding: 4px;
+    }
 }
 
 .menu a:hover {
@@ -57,12 +85,27 @@ nav {
     align-items: center;
 }
 
+@media (max-width: 600px) {
+    .hero {
+        height: 400px;
+        background-position: top;
+    }
+}
+
 .hero h1 {
     margin: 16rem auto 10px;
     font-size: 4rem;
     color: white;
     text-transform: uppercase;
     font-weight: 200
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 10.3rem;
+    }
 }
 
 .hero * {
@@ -79,11 +122,23 @@ nav {
     z-index: 0;
 }
 
+@media (max-width: 600px) {
+    .hero::before {
+        min-height: 400px;
+    }
+}
+
 .slogan {
     font-size: 1.4rem;
     font-style: italic;
     margin: 0;
     color: white;
+}
+
+@media (max-width: 600px) {
+    .slogan {
+        font-size: 1rem;
+    }
 }
 
 .chamamento-duvida {
@@ -102,6 +157,12 @@ nav {
 .chamamento-duvida img {
     width: 800px;
     height: 500px;
+}
+
+@media (max-width: 600px) {
+    .chamamento-duvida img {
+        display: none;
+    }
 }
 
 .chamamento-duvida_pergunta {
@@ -146,6 +207,12 @@ nav {
     margin-bottom: 4rem;
 }
 
+@media (max-width: 600px) {
+    .titulo_suporte {
+        margin-bottom: 2rem;
+    }
+}
+
 .list-solucao {
     display: flex;
     gap: 2rem;
@@ -154,17 +221,30 @@ nav {
     margin: auto auto 5rem;
 }
 
+@media (max-width: 600px) {
+    .list-solucao {
+        margin: 0 2rem 3rem;
+    }
+}
+
 .list-solucao_item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 200px;
 }
+
 
 .list-solucao_item img {
     width: 160px;
     height: 160px;
+}
+
+@media (max-width: 600px) {
+    .list-solucao_item img{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .list-solucao_item h2 {
@@ -202,6 +282,13 @@ nav {
     background-size: cover;
     height: 150px;
     position: relative;
+}
+
+@media (max-width: 600px) {
+    .contatos-mais_informacoes {
+        text-align: center;
+    }
+    
 }
 
 .contatos-mais_informacoes::before {

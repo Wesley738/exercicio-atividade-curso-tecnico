@@ -18,12 +18,28 @@ body {
     position: fixed;
     top: 0; right: 20px; left: 20px;
     z-index: 3;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .cabecalho img {
     width: 15rem;
     height: 5rem;
     margin-left: 8px;
+}
+
+@media (max-width: 600px) {
+    .cabecalho img {
+        width: 10rem;
+        height: 3rem;
+    }
 }
 
 nav {
@@ -37,11 +53,25 @@ nav {
     font-size: 1.1rem;
 }
 
+@media (max-width: 600px) {
+    .menu {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
 .menu a {
     font-weight: 600;
     color: black;
     text-decoration: none;
     padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .menu a {
+        padding: 4px;
+    }
 }
 
 .menu a:hover {
@@ -50,10 +80,18 @@ nav {
 
 .hero {
     background-image: url(imgs/pexels-googledeepmind-17485706.jpg);
+    background-repeat: no-repeat;
     height: 630px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 650px;
+        background-position: center;
+    }
 }
 
 .hero h1 {
@@ -62,6 +100,14 @@ nav {
     color: black;
     text-transform: uppercase;
     font-weight: 200
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 10.3rem;
+    }
 }
 
 .hero * {
@@ -78,10 +124,22 @@ nav {
     z-index: 0;
 }
 
+@media (max-width: 600px) {
+    .hero::before {
+        min-height: 650px;
+    }
+}
+
 .slogan {
     font-size: 1.4rem;
     font-style: italic;
     margin: 0;
+}
+
+@media (max-width: 600px) {
+    .slogan {
+        font-size: 1rem;
+    }
 }
 
 .credibilidade {
@@ -92,6 +150,16 @@ nav {
     padding: 0;
     font-size: 1rem;
     color: white;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .credibilidade {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+        text-align: center;
+    }
 }
 
 .credibilidade li {
@@ -118,20 +186,41 @@ nav {
     justify-content: center;
     padding: 0;
     margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .clientes_list {
+        flex-wrap: wrap;
+    }
 }
 
 .clientes_list img {
     width: 180px;
 }
 
+@media (max-width: 600px) {
+    .clientes_list img {
+        width: 120px;
+    }
+}
+
 .list-caract {
     padding: 20px;
     background-color: #3167b8;
     display: flex;
-    height: 200px;
+    height: 100%;
     gap: 20px;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .list-caract {
+        flex-wrap: wrap;
+        height: 100%;
+    }
 }
 
 .list-caract_item {
@@ -141,6 +230,12 @@ nav {
     border-radius: 0.8rem;
 }
 
+@media (max-width: 600px) {
+    .list-caract_item {
+        flex-basis: 200px;
+    }
+}
+
 .list-caract_item__titulo {
     font-size: 4rem;
     margin: 0;
@@ -148,6 +243,12 @@ nav {
     font-weight: bold;
     color: #0a2188;
     padding: 1rem;
+}
+
+@media (max-width: 600px) {
+    .list-caract_item__titulo {
+        font-size: 3.5rem;
+    }
 }
 
 .list-caract_item__info {
@@ -163,10 +264,27 @@ nav {
     padding-bottom: 1rem;
 }
 
+@media (max-width: 600px) {
+    .servicos .titulo_secao {
+        width: 100%;
+        font-size: 2.1rem;
+    }
+}
+
 .servicos_intro {
     text-align: center;
     margin: 0 0 4rem 0;
     font-size: 1.4rem;
+}
+
+@media (max-width: 600px) {
+    .servicos_intro {
+        font-size: 1rem;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
 }
 
 .servicos_list {
@@ -189,6 +307,13 @@ nav {
     position: relative;
 }
 
+@media (max-width: 600px) {
+    .servicos_list__item {
+        flex-basis: 200px;
+        height: 150px;
+    }
+}
+
 .servicos_list__item-titulo {
     font-size: 2rem;
     margin-top: 0;
@@ -198,6 +323,13 @@ nav {
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 5px;
+}
+
+@media (max-width: 600px) {
+    .servicos_list__item-titulo {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
 }
 
 .servicos_list__item::before {
@@ -257,6 +389,13 @@ nav {
     border-bottom: 2px solid #3167b8;
 }
 
+@media (max-width: 600px) {
+    .titulo_secao-depoimentos {
+        width: 90%;
+        font-size: 1.8rem;
+    }
+}
+
 .depoimentos {
     display: flex;
     flex-wrap: wrap;
@@ -306,6 +445,13 @@ nav {
     background-size: cover;
     height: 150px;
     position: relative;
+}
+
+@media (max-width: 600px) {
+    .contatos-mais_informacoes {
+        text-align: center;
+    }
+    
 }
 
 .contatos-mais_informacoes::before {
