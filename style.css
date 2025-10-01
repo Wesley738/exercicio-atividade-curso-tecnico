@@ -1,6 +1,4 @@
 body {
-    /* width: 80%;
-    margin: auto; */
     font-size: 62.5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -41,7 +39,6 @@ nav {
 
 .menu a {
     font-weight: 600;
-    /* color: #0a2188; */
     color: black;
     text-decoration: none;
     padding: 10px;
@@ -52,7 +49,7 @@ nav {
 }
 
 .hero {
-    background-image: url(/imgs/pexels-googledeepmind-17485706.jpg);
+    background-image: url(imgs/pexels-googledeepmind-17485706.jpg);
     height: 630px;
     display: flex;
     flex-direction: column;
@@ -222,32 +219,32 @@ nav {
 }
 
 #contabil {
-    background-image: url(/imgs/contabil.jpg);
+    background-image: url(imgs/contabil.jpg);
     background-size: cover;
 }
 
 #gestao {
-    background-image: url(/imgs/gestao.jpg);
+    background-image: url(imgs/gestao.jpg);
     background-size: cover;
 }
 
 #moda {
-    background-image: url(/imgs/moda.jpg);
+    background-image: url(imgs/moda.jpg);
     background-size: cover;
 }
 
 #educacional {
-    background-image: url(/imgs/educacao.jpg);
+    background-image: url(imgs/educacao.jpg);
     background-size: cover;
 }
 
 #imobiliario {
-    background-image: url(/imgs/imobiliario.jpg);
+    background-image: url(imgs/imobiliario.jpg);
     background-size: cover;
 }
 
 #empresarial {
-    background-image: url(/imgs/empresario.jpg);
+    background-image: url(imgs/empresario.jpg);
     background-size: cover;
 }
 
