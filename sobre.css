@@ -52,7 +52,7 @@ nav {
 }
 
 .hero {
-    background-image: url(../imgs/solucoes_bg.jpg);
+    background-image: url(/imgs/sobre_bg.jpg);
     height: 630px;
     display: flex;
     flex-direction: column;
@@ -88,138 +88,46 @@ nav {
     color: white;
 }
 
-.titulo_secao {
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin: 3rem auto 0 auto;
-    width: 70%;
-}
-
-.titulo_secao span {
-    color: #3167b8;
-    font-size: 2.7rem;
-}
-
-.list-solucao {
-    display: flex;
-    gap: 2rem;
-    margin-top: 4rem;
-    justify-content: space-evenly;
-}
-
-.list-solucao_item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 200px;
-}
-
-.list-solucao_item img {
-    width: 160px;
-    height: 160px;
-    border: 1.2rem solid #3167b8;
-    border-radius: 50%;
-}
-
-.list-solucao_item h2 {
-    font-size: 1.6rem;
-}
-
-.list-solucao_item p {
-    text-align: center;
+.titulo-menor {
     font-size: 1rem;
-}
-
-.list-solucao_item a {
-    color: #3167b8;
-    font-size: 1rem;
-    text-decoration: none;
-    margin-top: 1.5rem;
+    text-transform: uppercase;
+    color: #0a2188;
     font-weight: bold;
-    padding: 0.5rem;
-    width: 100%;
-    text-align: center;
-    border-radius: 1rem;
-}
-
-.list-solucao_item a:hover {
-    box-shadow: 1px 1px 13px rgba(10, 70, 182, 0.7);
-}
-
-
-#gestao {
-    border: 1.2rem solid #31b831;
-}
-
-#imobiliario {
-    border: 1.2rem solid #e9803b;
-}
-
-#educacao {
-    border: 1.2rem solid #e93b3b;
-}
-
-.chamamento-duvida {
-    display: flex;
-    align-items: center;
-    margin: 4rem auto 5rem;
-}
-
-.chamamento-duvida__auxiliar {
-    display: flex;
-    flex-direction: column;
     margin-left: 1rem;
-    margin-right: 1rem;
+    margin-top: 4rem;
 }
 
-.chamamento-duvida img {
-    width: 800px;
-    height: 500px;
+.apresentacao-geral {
+    display: flex;
+    margin-left: 1rem;
+    gap: 5rem;
 }
 
-.chamamento-duvida_pergunta {
-    font-size: 2.4rem;
+.apresentacao-geral__texto--destaque {
     font-weight: bold;
-    color: black;
-    line-height: 1;
-    margin-bottom: 0.6rem;
+    font-size: 2.4rem;
+    line-height: 1.1;
 }
 
-.chamamento-duvida_motiva {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 100;
-    color: black;
-    line-height: 1;
-    padding: 1px;
+.apresentacao-geral__texto--geral {
+    font-size: 1.4rem;
 }
 
-.chamamento-duvida a {
-    text-decoration: none;
-    color: white;
-    padding: 0.7rem;
-    background-color: #3167b8;
-    margin-top: 3rem;
-    width: 30%;
-    border-radius: 0.5rem;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
+.paragrafo-final {
+    margin-bottom: 6rem;
 }
 
-.chamamento-duvida a:hover {
-    background-color: white;
-    color: #3167b8;
-    outline: 1px solid #3167b8;
+.apresentacao-geral__video {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
 }
 
 .contatos-mais_informacoes {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../imgs/footer.jpg);
+    background-image: url(/imgs/footer.jpg);
     background-size: cover;
     height: 150px;
     position: relative;
